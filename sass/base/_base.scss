@@ -17,7 +17,7 @@ li {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	// vertical-align: baseline;
 	text-decoration: none; /* Убираем подчеркивания у ссылок */
 	box-sizing: border-box; /* Учитываем padding и border в общей ширине/высоте элемента */
 }
@@ -60,12 +60,6 @@ body {
 ul {
 	list-style-type: none; /* Убираем маркеры у всех списков */
 	padding: 0;
-}
-
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
 }
 
 header {
