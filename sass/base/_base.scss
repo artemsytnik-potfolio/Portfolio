@@ -1,0 +1,85 @@
+/* reset.scss */
+
+/* Reset styles */
+html,
+body,
+h1,
+h2,
+h3,
+p,
+a,
+img,
+ul,
+ol,
+li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none; /* Убираем подчеркивания у ссылок */
+	box-sizing: border-box; /* Учитываем padding и border в общей ширине/высоте элемента */
+}
+
+@font-face {
+	font-family: 'Futura PT Demi';
+	src: url('FuturaPT-DemiObl.eot');
+	src: local('Futura PT Demi Oblique'), local('FuturaPT-DemiObl'),
+		url('FuturaPT-DemiObl.eot?#iefix') format('embedded-opentype'),
+		url('FuturaPT-DemiObl.woff2') format('woff2'),
+		url('FuturaPT-DemiObl.woff') format('woff'),
+		url('FuturaPT-DemiObl.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+/* Basic styling */
+body {
+	font-family: 'Raleway', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	background-color: #f0f0f0;
+	color: #ffffff; /* Цвет текста по умолчанию */
+}
+
+.header__logo {
+	font-size: 2rem;
+	font-weight: 500;
+	color: #000000;
+	opacity: 0;
+	transition: opacity 1.4s ease, transform 1s ease; /* Add transform transition */
+	transform: translate(-120%, 0px);
+}
+
+.header__logo._active {
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+ul {
+	list-style-type: none; /* Убираем маркеры у всех списков */
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+header {
+	background-color: #ffffff;
+	color: #020202;
+	padding: 30px 0;
+}
+
+nav {
+	display: inline-block;
+}
+
+nav a {
+	color: #000000;
+	text-decoration: none;
+	margin-left: 20px;
+}

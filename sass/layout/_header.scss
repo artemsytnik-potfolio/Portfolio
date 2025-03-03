@@ -1,0 +1,100 @@
+/* Base styles (mobile first) */
+.header {
+	display: block;
+	align-items: center;
+	justify-content: space-between; /* Ensure spacing between logo and nav */
+	// max-width: 1600px;
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+}
+
+.nav {
+	margin-left: auto;
+	opacity: 0;
+	transition: opacity 1.4s ease, transform 1s ease; /* Add transform transition */
+	transform: translate(20%, 0px);
+}
+
+.nav._active {
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+.nav__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column; /* Vertical layout for mobile */
+	align-items: flex-start; /* Align items to the start */
+}
+
+.nav__list-item {
+	display: block; /* Block elements for vertical layout */
+	margin-bottom: 0.5rem; /* Space between items */
+}
+
+.nav__list-item:first-child {
+	margin-left: 0; /* Remove left margin for the first list item */
+}
+
+.nav__list-item a {
+	text-decoration: none; /* Remove default underline */
+	color: #333; /* Link color */
+	font-weight: 400; /* Font weight */
+	font-size: 1rem; /* Font size */
+	transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
+	border-bottom: 2px solid transparent; /* Transparent underline */
+}
+
+.nav__list-item a.border-bottom {
+	border-bottom: 2px solid #333; /* Persistent underline */
+}
+
+.nav__list-item a:hover {
+	border-bottom-color: #333; /* Underline color on hover */
+	transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+	.header {
+		justify-content: space-between; /* Ensure spacing between logo and nav */
+		display: flex;
+	}
+
+	.nav__list {
+		flex-direction: row; /* Horizontal layout for tablet */
+		align-items: center; /* Center align items */
+	}
+
+	.nav__list-item {
+		display: inline-block; /* Inline-block for horizontal layout */
+		margin-left: 1rem; /* Add margin between list items */
+		margin-bottom: 0; /* Remove bottom margin */
+	}
+
+	.nav__list-item a {
+		font-size: 1.1rem; /* Adjust font size */
+	}
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+	.nav__list-item a {
+		font-size: 1.2rem; /* Adjust font size */
+	}
+	.header {
+		display: flex;
+	}
+}
+
+/* Large desktop styles */
+@media (min-width: 1200px) {
+	.header {
+		max-width: 1200px; /* Max-width for header */
+		margin: 0 auto; /* Center header */
+		display: flex;
+	}
+}
