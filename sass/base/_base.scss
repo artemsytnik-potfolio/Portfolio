@@ -22,6 +22,21 @@ li {
 	box-sizing: border-box; /* Учитываем padding и border в общей ширине/высоте элемента */
 }
 
+a {
+	text-decoration: none; /* Убираем стандартное подчеркивание */
+	color: #ffd700; /* Золотой цвет текста */
+	font-weight: normal; /* Делаем текст жирным для солидности */
+
+	transition: all 0.3s ease-in-out; /* Плавный переход при наведении */
+	border-bottom: 2px solid transparent; /* Линия снизу, но невидимая */
+}
+
+a:hover {
+	color: #ffc107; /* Немного светлее при наведении */
+	// border-bottom: 2px solid #ffd700; /* Подчеркивание золотым */
+	text-shadow: 0px 0px 1px rgba(255, 215, 0, 0.3); /* Свечение */
+}
+
 @font-face {
 	font-family: 'Futura PT Demi';
 	src: url('FuturaPT-DemiObl.eot');
