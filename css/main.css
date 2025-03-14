@@ -67,7 +67,7 @@ li {
 
 a {
   text-decoration: none; /* Убираем стандартное подчеркивание */
-  color: #ffd700; /* Золотой цвет текста */
+  color: #ffa500; /* Золотой цвет текста */
   font-weight: normal; /* Делаем текст жирным для солидности */
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; /* Плавный переход при наведении */
@@ -75,7 +75,7 @@ a {
 }
 
 a:hover {
-  color: #ffc107; /* Немного светлее при наведении */
+  color: #ffa500; /* Немного светлее при наведении */
   text-shadow: 0px 0px 1px rgba(255, 215, 0, 0.3); /* Свечение */
 }
 
@@ -93,7 +93,20 @@ body {
   font-weight: 300;
   font-style: normal;
   background-color: #f0f0f0;
-  color: #ffffff; /* Цвет текста по умолчанию */
+  color: #ffa500; /* Цвет текста по умолчанию */
+}
+
+.index-text .header__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 1.4s ease, -webkit-transform 1s ease;
+  transition: opacity 1.4s ease, -webkit-transform 1s ease;
+  transition: opacity 1.4s ease, transform 1s ease;
+  transition: opacity 1.4s ease, transform 1s ease, -webkit-transform 1s ease; /* Add transform transition */
+  -webkit-transform: translate(-120%, 0px);
+          transform: translate(-120%, 0px);
 }
 
 .header__logo {
@@ -136,6 +149,204 @@ nav a {
   margin-left: 20px;
 }
 
+.about_video {
+  margin: 0 auto;
+  padding: 200px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../img/videoImage/bg-montag.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../img/videoImage/bg-montag.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.about_video .container {
+  max-width: 800px;
+}
+
+.about_video-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about_videotext {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.about_videobutton {
+  display: inline-block;
+  background: linear-gradient(45deg, #333, #333);
+  color: white;
+  padding: 12px 24px;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.about_videobutton:hover {
+  background: linear-gradient(45deg, #fff, #333);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mouse {
+  width: 30px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wheel {
+  width: 6px;
+  height: 10px;
+  background-color: white;
+  border-radius: 3px;
+  position: absolute;
+  -webkit-animation: wheelMove 1.5s infinite ease-in-out;
+          animation: wheelMove 1.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes wheelMove {
+  0% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+    opacity: 1;
+  }
+}
+
+@keyframes wheelMove {
+  0% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+    opacity: 1;
+  }
+}
+/* Стрелки */
+.arrows span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: 5px;
+  -webkit-animation: arrowMove 1.5s infinite ease-in-out;
+          animation: arrowMove 1.5s infinite ease-in-out;
+}
+
+.arrows span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.arrows span:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes arrowMove {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0) rotate(45deg);
+            transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(5px) rotate(45deg);
+            transform: translateY(5px) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) rotate(45deg);
+            transform: translateY(0) rotate(45deg);
+  }
+}
+
+@keyframes arrowMove {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0) rotate(45deg);
+            transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(5px) rotate(45deg);
+            transform: translateY(5px) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) rotate(45deg);
+            transform: translateY(0) rotate(45deg);
+  }
+}
 .video__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,12 +409,7 @@ nav a {
           transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-top: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -218,9 +424,10 @@ nav a {
 }
 
 .overlay-text {
-  color: #ffffff;
-  font-size: 1.2rem;
+  color: #ffa500;
+  font-size: 18px;
   text-align: center;
+  padding-top: 10px;
 }
 
 @-webkit-keyframes text {
@@ -259,6 +466,102 @@ nav a {
             flex: 50%;
   }
 }
+.banner {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner .slider {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  top: 10%;
+  left: calc(50% - 100px);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(1000px);
+          transform: perspective(1000px);
+  -webkit-animation: autoRun 60s linear infinite;
+          animation: autoRun 60s linear infinite;
+  z-index: 2;
+}
+
+@-webkit-keyframes autoRun {
+  from {
+    -webkit-transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
+            transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
+  }
+  to {
+    -webkit-transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
+            transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
+  }
+}
+
+@keyframes autoRun {
+  from {
+    -webkit-transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
+            transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
+  }
+  to {
+    -webkit-transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
+            transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
+  }
+}
+.banner .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  -webkit-transform: rotateY(calc((var(--position) - 1) * 360 / var(--quantity) * 1deg)) translateZ(550px);
+          transform: rotateY(calc((var(--position) - 1) * 360 / var(--quantity) * 1deg)) translateZ(550px);
+}
+
+.banner .slider .item a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner .content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: min(1400px, 100vw);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.banner .content .model {
+  background-image: url("../../img/about/me1.png");
+  width: 100%;
+  height: 75vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: auto 130%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 0;
+}
+
 /* Base styles (mobile first) */
 .header {
   display: block;
@@ -315,6 +618,16 @@ nav a {
   margin-left: 0; /* Remove left margin for the first list item */
 }
 
+.index-text .nav__list-item a {
+  text-decoration: none; /* Remove default underline */
+  color: #fff; /* Link color */
+  font-weight: 400; /* Font weight */
+  font-size: 1rem; /* Font size */
+  -webkit-transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
+  border-bottom: 2px solid transparent; /* Transparent underline */
+}
+
 .nav__list-item a {
   text-decoration: none; /* Remove default underline */
   color: #333; /* Link color */
@@ -325,8 +638,18 @@ nav a {
   border-bottom: 2px solid transparent; /* Transparent underline */
 }
 
+.index-text .nav__list-item a.border-bottom {
+  border-bottom: 2px solid #fff; /* Persistent underline */
+}
+
 .nav__list-item a.border-bottom {
   border-bottom: 2px solid #333; /* Persistent underline */
+}
+
+.index-text .nav__list-item a:hover {
+  border-bottom-color: #fff; /* Underline color on hover */
+  -webkit-transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__list-item a:hover {
@@ -337,6 +660,15 @@ nav a {
 
 /* Tablet styles */
 @media (min-width: 768px) {
+  .index {
+    position: absolute; /* Поверх hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Выше остальных слоев */
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
   .header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -344,6 +676,9 @@ nav a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .nav__list {
     -webkit-box-orient: horizontal;
@@ -613,12 +948,113 @@ nav a {
 }
 
 @media (min-width: 768px) {
-  .photo__list li {
+  .photo__list .horizontal {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
   }
+  .photo__list .vertical {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+  }
 }
+/* Общие стили для изображений с оверлеем */
+/* Общие стили для изображений с оверлеем */
+.swiper-wrapper {
+  position: relative; /* Необходимо для правильного позиционирования оверлея */
+  overflow: hidden; /* Скрывает элементы, выходящие за пределы контейнера */
+}
+
+/* Оверлей с плавным появлением */
+.overlay-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Темный полупрозрачный фон */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Центрируем текст по горизонтали */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* Центрируем текст по вертикали */
+  opacity: 0; /* Скрыть оверлей по умолчанию */
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; /* Плавное изменение прозрачности */
+}
+
+.swiper-wrapper:hover .overlay-photo {
+  opacity: 1; /* Показываем оверлей при наведении */
+}
+
+/* Всплывающий текст */
+.overlay-text-photo {
+  color: #ffa500; /* Оранжевый цвет текста */
+  font-size: 18px; /* Размер текста */
+  /* Жирный шрифт */
+  text-align: center; /* Выравнивание текста по центру */
+  text-transform: uppercase; /* Заглавные буквы */
+  padding: 10px; /* Отступы вокруг текста */
+  letter-spacing: 2px; /* Межбуквенный интервал */
+  opacity: 0; /* Скрыть текст по умолчанию */
+  -webkit-animation: fadeIn 1.5s infinite;
+          animation: fadeIn 1.5s infinite; /* Анимация появления */
+  display: block;
+}
+
+/* Анимация всплывания текста */
+@-webkit-keyframes fadeIn {
+  0% {
+    /* Начинаем с нижней позиции */
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); /* Двигаем текст в его обычное положение */
+  }
+}
+@keyframes fadeIn {
+  0% {
+    /* Начинаем с нижней позиции */
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); /* Двигаем текст в его обычное положение */
+  }
+}
+/* При наведении на изображение начинаем анимацию */
+.swiper-wrapper:hover .overlay-text-photo {
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards; /* Включаем анимацию при наведении */
+}
+
+/* Для улучшения читаемости можно добавить немного теней к тексту */
+.overlay-text-photo {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 .footer {
   padding: 20px 0px;
   text-align: center; /* Center the content of the footer */

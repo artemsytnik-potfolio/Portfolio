@@ -24,7 +24,7 @@ li {
 
 a {
 	text-decoration: none; /* Убираем стандартное подчеркивание */
-	color: #ffd700; /* Золотой цвет текста */
+	color: #ffa500; /* Золотой цвет текста */
 	font-weight: normal; /* Делаем текст жирным для солидности */
 
 	transition: all 0.3s ease-in-out; /* Плавный переход при наведении */
@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-	color: #ffc107; /* Немного светлее при наведении */
+	color: #ffa500; /* Немного светлее при наведении */
 	// border-bottom: 2px solid #ffd700; /* Подчеркивание золотым */
 	text-shadow: 0px 0px 1px rgba(255, 215, 0, 0.3); /* Свечение */
 }
@@ -55,7 +55,16 @@ body {
 	font-weight: 300;
 	font-style: normal;
 	background-color: #f0f0f0;
-	color: #ffffff; /* Цвет текста по умолчанию */
+	color: #ffa500; /* Цвет текста по умолчанию */
+}
+
+.index-text .header__logo {
+	font-size: 2rem;
+	font-weight: 500;
+	color: #fff;
+	opacity: 0;
+	transition: opacity 1.4s ease, transform 1s ease; /* Add transform transition */
+	transform: translate(-120%, 0px);
 }
 
 .header__logo {

@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	let animItems = document.querySelectorAll('._anim-items')
 
 	if (animItems.length > 0) {
+		animItems.forEach(item => item.classList.add('_active'))
 		window.addEventListener('scroll', animOnScroll)
-		animOnScroll() // Trigger initial check
 
 		function animOnScroll() {
 			for (let index = 0; index < animItems.length; index++) {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				scrollTop = window.pageYOffset || document.documentElement.scrollTop
 			return { top: rect.top + scrollTop }
 		}
-		animOnScroll()
+		// animOnScroll()
 		// Function to get offset of an element
 	}
 })

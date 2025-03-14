@@ -49,7 +49,79 @@
 }
 
 @media (min-width: 768px) {
-	.photo__list li {
+	.photo__list .horizontal {
 		flex: calc(50%);
 	}
+
+	.photo__list .vertical {
+		flex: calc(30%);
+	}
+}
+
+/* Общие стили для изображений с оверлеем */
+/* Общие стили для изображений с оверлеем */
+.swiper-wrapper {
+	position: relative; /* Необходимо для правильного позиционирования оверлея */
+	overflow: hidden; /* Скрывает элементы, выходящие за пределы контейнера */
+}
+
+/* Оверлей с плавным появлением */
+.overlay-photo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Темный полупрозрачный фон */
+	display: flex;
+	justify-content: center; /* Центрируем текст по горизонтали */
+	align-items: center; /* Центрируем текст по вертикали */
+	opacity: 0; /* Скрыть оверлей по умолчанию */
+	transition: opacity 0.5s ease; /* Плавное изменение прозрачности */
+}
+
+.swiper-wrapper:hover .overlay-photo {
+	opacity: 1; /* Показываем оверлей при наведении */
+}
+
+/* Всплывающий текст */
+.overlay-text-photo {
+	color: #ffa500; /* Оранжевый цвет текста */
+	font-size: 18px; /* Размер текста */
+	/* Жирный шрифт */
+	text-align: center; /* Выравнивание текста по центру */
+	text-transform: uppercase; /* Заглавные буквы */
+	padding: 10px; /* Отступы вокруг текста */
+	letter-spacing: 2px; /* Межбуквенный интервал */
+	opacity: 0; /* Скрыть текст по умолчанию */
+	// transform: translateY(30px); /* Начальная позиция текста ниже */
+	animation: fadeIn 1.5s infinite; /* Анимация появления */
+	display: block;
+}
+
+/* Анимация всплывания текста */
+@keyframes fadeIn {
+	0% {
+		/* Начинаем с нижней позиции */
+		opacity: 1;
+		transform: translateY(0);
+	}
+	50% {
+		opacity: 1;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0); /* Двигаем текст в его обычное положение */
+	}
+}
+
+/* При наведении на изображение начинаем анимацию */
+.swiper-wrapper:hover .overlay-text-photo {
+	animation: fadeIn 1s forwards; /* Включаем анимацию при наведении */
+}
+
+/* Для улучшения читаемости можно добавить немного теней к тексту */
+.overlay-text-photo {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }

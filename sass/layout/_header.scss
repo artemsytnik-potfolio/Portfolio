@@ -39,6 +39,15 @@
 	margin-left: 0; /* Remove left margin for the first list item */
 }
 
+.index-text .nav__list-item a {
+	text-decoration: none; /* Remove default underline */
+	color: #fff; /* Link color */
+	font-weight: 400; /* Font weight */
+	font-size: 1rem; /* Font size */
+	transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
+	border-bottom: 2px solid transparent; /* Transparent underline */
+}
+
 .nav__list-item a {
 	text-decoration: none; /* Remove default underline */
 	color: #333; /* Link color */
@@ -48,8 +57,16 @@
 	border-bottom: 2px solid transparent; /* Transparent underline */
 }
 
+.index-text .nav__list-item a.border-bottom {
+	border-bottom: 2px solid #fff; /* Persistent underline */
+}
 .nav__list-item a.border-bottom {
 	border-bottom: 2px solid #333; /* Persistent underline */
+}
+
+.index-text .nav__list-item a:hover {
+	border-bottom-color: #fff; /* Underline color on hover */
+	transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__list-item a:hover {
@@ -59,9 +76,20 @@
 
 /* Tablet styles */
 @media (min-width: 768px) {
+	.index {
+		position: absolute; /* Поверх hero */
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10; /* Выше остальных слоев */
+		padding: 20px 0;
+		background-color: rgba($color: #000000, $alpha: 0);
+	}
+
 	.header {
 		justify-content: space-between; /* Ensure spacing between logo and nav */
 		display: flex;
+		align-items: center;
 	}
 
 	.nav__list {
