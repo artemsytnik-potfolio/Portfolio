@@ -1,47 +1,54 @@
 @charset "UTF-8";
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
+
 .about .container {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
+
   .about .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
 }
+
 @media screen and (min-width: 1200px) and (max-width: 767px) {
   .container {
     width: 480px;
     margin: 0 auto;
   }
 }
+
 /* reset.scss */
 /* Reset styles */
 html,
@@ -60,23 +67,32 @@ li {
   border: 0;
   font-size: 100%;
   font: inherit;
-  text-decoration: none; /* Убираем подчеркивания у ссылок */
+  text-decoration: none;
+  /* Убираем подчеркивания у ссылок */
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* Учитываем padding и border в общей ширине/высоте элемента */
+  box-sizing: border-box;
+  /* Учитываем padding и border в общей ширине/высоте элемента */
 }
 
 a {
-  text-decoration: none; /* Убираем стандартное подчеркивание */
-  color: #ffa500; /* Золотой цвет текста */
-  font-weight: normal; /* Делаем текст жирным для солидности */
+  text-decoration: none;
+  /* Убираем стандартное подчеркивание */
+  color: #ffa500;
+  /* Золотой цвет текста */
+  font-weight: normal;
+  /* Делаем текст жирным для солидности */
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; /* Плавный переход при наведении */
-  border-bottom: 2px solid transparent; /* Линия снизу, но невидимая */
+  transition: all 0.3s ease-in-out;
+  /* Плавный переход при наведении */
+  border-bottom: 2px solid transparent;
+  /* Линия снизу, но невидимая */
 }
 
 a:hover {
-  color: #ffa500; /* Немного светлее при наведении */
-  text-shadow: 0px 0px 1px rgba(255, 215, 0, 0.3); /* Свечение */
+  color: #ffa500;
+  /* Немного светлее при наведении */
+  text-shadow: 0px 0px 1px rgba(255, 215, 0, 0.3);
+  /* Свечение */
 }
 
 @font-face {
@@ -86,6 +102,7 @@ a:hover {
   font-weight: 600;
   font-style: italic;
 }
+
 /* Basic styling */
 body {
   font-family: "Raleway", sans-serif;
@@ -93,7 +110,8 @@ body {
   font-weight: 300;
   font-style: normal;
   background-color: #f0f0f0;
-  color: #ffa500; /* Цвет текста по умолчанию */
+  color: #ffa500;
+  /* Цвет текста по умолчанию */
 }
 
 .index-text .header__logo {
@@ -104,9 +122,10 @@ body {
   -webkit-transition: opacity 1.4s ease, -webkit-transform 1s ease;
   transition: opacity 1.4s ease, -webkit-transform 1s ease;
   transition: opacity 1.4s ease, transform 1s ease;
-  transition: opacity 1.4s ease, transform 1s ease, -webkit-transform 1s ease; /* Add transform transition */
+  transition: opacity 1.4s ease, transform 1s ease, -webkit-transform 1s ease;
+  /* Add transform transition */
   -webkit-transform: translate(-120%, 0px);
-          transform: translate(-120%, 0px);
+  transform: translate(-120%, 0px);
 }
 
 .header__logo {
@@ -117,19 +136,21 @@ body {
   -webkit-transition: opacity 1.4s ease, -webkit-transform 1s ease;
   transition: opacity 1.4s ease, -webkit-transform 1s ease;
   transition: opacity 1.4s ease, transform 1s ease;
-  transition: opacity 1.4s ease, transform 1s ease, -webkit-transform 1s ease; /* Add transform transition */
+  transition: opacity 1.4s ease, transform 1s ease, -webkit-transform 1s ease;
+  /* Add transform transition */
   -webkit-transform: translate(-120%, 0px);
-          transform: translate(-120%, 0px);
+  transform: translate(-120%, 0px);
 }
 
 .header__logo._active {
   -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
   opacity: 1;
 }
 
 ul {
-  list-style-type: none; /* Убираем маркеры у всех списков */
+  list-style-type: none;
+  /* Убираем маркеры у всех списков */
   padding: 0;
 }
 
@@ -152,8 +173,8 @@ nav a {
 .about_video {
   margin: 0 auto;
   padding: 200px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/videoImage/bg-montag.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/videoImage/bg-montag.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("./../img/videoImage/bg-montag.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./../img/videoImage/bg-montag.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,11 +183,11 @@ nav a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -205,7 +226,7 @@ nav a {
 .about_videobutton:hover {
   background: linear-gradient(45deg, #fff, #333);
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .scroll-down {
@@ -213,17 +234,17 @@ nav a {
   bottom: 20%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .mouse {
@@ -236,11 +257,11 @@ nav a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .wheel {
@@ -250,23 +271,25 @@ nav a {
   border-radius: 3px;
   position: absolute;
   -webkit-animation: wheelMove 1.5s infinite ease-in-out;
-          animation: wheelMove 1.5s infinite ease-in-out;
+  animation: wheelMove 1.5s infinite ease-in-out;
 }
 
 @-webkit-keyframes wheelMove {
   0% {
     -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+    transform: translateY(-2px);
     opacity: 1;
   }
+
   50% {
     -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    transform: translateY(2px);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+    transform: translateY(-2px);
     opacity: 1;
   }
 }
@@ -274,20 +297,23 @@ nav a {
 @keyframes wheelMove {
   0% {
     -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+    transform: translateY(-2px);
     opacity: 1;
   }
+
   50% {
     -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    transform: translateY(2px);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+    transform: translateY(-2px);
     opacity: 1;
   }
 }
+
 /* Стрелки */
 .arrows span {
   display: block;
@@ -296,37 +322,39 @@ nav a {
   border-bottom: 2px solid white;
   border-right: 2px solid white;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   margin-top: 5px;
   -webkit-animation: arrowMove 1.5s infinite ease-in-out;
-          animation: arrowMove 1.5s infinite ease-in-out;
+  animation: arrowMove 1.5s infinite ease-in-out;
 }
 
 .arrows span:nth-child(2) {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .arrows span:nth-child(3) {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 @-webkit-keyframes arrowMove {
   0% {
     opacity: 1;
     -webkit-transform: translateY(0) rotate(45deg);
-            transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
   }
+
   50% {
     opacity: 1;
     -webkit-transform: translateY(5px) rotate(45deg);
-            transform: translateY(5px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0) rotate(45deg);
-            transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
   }
 }
 
@@ -334,39 +362,44 @@ nav a {
   0% {
     opacity: 1;
     -webkit-transform: translateY(0) rotate(45deg);
-            transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
   }
+
   50% {
     opacity: 1;
     -webkit-transform: translateY(5px) rotate(45deg);
-            transform: translateY(5px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0) rotate(45deg);
-            transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
   }
 }
+
 .video__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   opacity: 0;
   -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
   transition: opacity 1s ease, -webkit-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease; /* Add transform transition */
+  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease;
+  /* Add transform transition */
   -webkit-transform: translate(0px, 10%);
-          transform: translate(0px, 10%); /* Initial transform state */
+  transform: translate(0px, 10%);
+  /* Initial transform state */
 }
 
 .video__list._active {
   -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
   opacity: 1;
 }
 
@@ -380,25 +413,31 @@ nav a {
 .video__list li a {
   color: #333;
   position: relative;
-  display: grid; /* Чтобы изображение занимало весь li */
+  display: grid;
+  /* Чтобы изображение занимало весь li */
 }
 
 .video__list li a img {
-  width: 100%; /* Полная ширина изображения */
+  width: 100%;
+  /* Полная ширина изображения */
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* Фит изображения */
+  object-fit: cover;
+  /* Фит изображения */
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* Плавный переход при наведении */
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  /* Плавный переход при наведении */
 }
 
 .video__list li a:hover img {
   -webkit-filter: brightness(70%);
-          filter: brightness(70%); /* Затемнение изображения при наведении */
+  filter: brightness(70%);
+  /* Затемнение изображения при наведении */
   -webkit-transform: scale(1.1);
-          transform: scale(1.1); /* Увеличение при наведении */
+  transform: scale(1.1);
+  /* Увеличение при наведении */
 }
 
 .video__list li .overlay {
@@ -406,21 +445,24 @@ nav a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   padding-top: 50%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  /* Полупрозрачный черный фон */
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; /* Плавный переход */
+  transition: opacity 0.3s ease;
+  /* Плавный переход */
 }
 
 .video__list li:hover .overlay {
-  opacity: 1; /* Показывать overlay при наведении */
+  opacity: 1;
+  /* Показывать overlay при наведении */
 }
 
 .overlay-text {
@@ -434,6 +476,7 @@ nav a {
   0% {
     color: rgba(0, 0, 0, 0);
   }
+
   30% {
     letter-spacing: 5px;
   }
@@ -443,29 +486,34 @@ nav a {
   0% {
     color: rgba(0, 0, 0, 0);
   }
+
   30% {
     letter-spacing: 5px;
   }
 }
+
 .video__list li .overlay-text {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; /* Плавный переход */
+  transition: opacity 0.3s ease;
+  /* Плавный переход */
 }
 
 .video__list li:hover .overlay-text {
   opacity: 1;
   -webkit-animation: text 2s 1;
-          animation: text 2s 1; /* Воспроизведение анимации */
+  animation: text 2s 1;
+  /* Воспроизведение анимации */
 }
 
 @media (min-width: 768px) {
   .video__list li {
     -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%;
   }
 }
+
 .banner {
   width: 100%;
   height: 100vh;
@@ -481,47 +529,50 @@ nav a {
   top: 10%;
   left: calc(50% - 100px);
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transform: perspective(1000px);
-          transform: perspective(1000px);
+  transform: perspective(1000px);
   -webkit-animation: autoRun 60s linear infinite;
-          animation: autoRun 60s linear infinite;
+  animation: autoRun 60s linear infinite;
   z-index: 2;
 }
 
 @-webkit-keyframes autoRun {
   from {
     -webkit-transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
-            transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
+    transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
   }
+
   to {
     -webkit-transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
-            transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
+    transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
   }
 }
 
 @keyframes autoRun {
   from {
     -webkit-transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
-            transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
+    transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
   }
+
   to {
     -webkit-transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
-            transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
+    transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
   }
 }
+
 .banner .slider .item {
   position: absolute;
   inset: 0 0 0 0;
   -webkit-transform: rotateY(calc((var(--position) - 1) * 360 / var(--quantity) * 1deg)) translateZ(550px);
-          transform: rotateY(calc((var(--position) - 1) * 360 / var(--quantity) * 1deg)) translateZ(550px);
+  transform: rotateY(calc((var(--position) - 1) * 360 / var(--quantity) * 1deg)) translateZ(550px);
 }
 
 .banner .slider .item a img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .banner .content {
@@ -529,7 +580,7 @@ nav a {
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: min(1400px, 100vw);
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -539,18 +590,18 @@ nav a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 1;
 }
 
 .banner .content .model {
-  background-image: url("../img/about/me1.png");
+  background-image: url("./../img/about/me1.png");
   width: 100%;
   height: 75vh;
   position: absolute;
@@ -566,11 +617,12 @@ nav a {
 .header {
   display: block;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; /* Ensure spacing between logo and nav */
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  /* Ensure spacing between logo and nav */
   margin: 0 auto;
   padding: 5px;
   text-align: center;
@@ -582,14 +634,15 @@ nav a {
   -webkit-transition: opacity 1.4s ease, -webkit-transform 1s ease;
   transition: opacity 1.4s ease, -webkit-transform 1s ease;
   transition: opacity 1.4s ease, transform 1s ease;
-  transition: opacity 1.4s ease, transform 1s ease, -webkit-transform 1s ease; /* Add transform transition */
+  transition: opacity 1.4s ease, transform 1s ease, -webkit-transform 1s ease;
+  /* Add transform transition */
   -webkit-transform: translate(20%, 0px);
-          transform: translate(20%, 0px);
+  transform: translate(20%, 0px);
 }
 
 .nav._active {
   -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
   opacity: 1;
 }
 
@@ -602,123 +655,164 @@ nav a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; /* Vertical layout for mobile */
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* Vertical layout for mobile */
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; /* Align items to the start */
+  -ms-flex-align: start;
+  align-items: flex-start;
+  /* Align items to the start */
 }
 
 .nav__list-item {
-  display: block; /* Block elements for vertical layout */
-  margin-bottom: 0.5rem; /* Space between items */
+  display: block;
+  /* Block elements for vertical layout */
+  margin-bottom: 0.5rem;
+  /* Space between items */
 }
 
 .nav__list-item:first-child {
-  margin-left: 0; /* Remove left margin for the first list item */
+  margin-left: 0;
+  /* Remove left margin for the first list item */
 }
 
 .index-text .nav__list-item a {
-  text-decoration: none; /* Remove default underline */
-  color: #fff; /* Link color */
-  font-weight: 400; /* Font weight */
-  font-size: 1rem; /* Font size */
+  text-decoration: none;
+  /* Remove default underline */
+  color: #fff;
+  /* Link color */
+  font-weight: 400;
+  /* Font weight */
+  font-size: 1rem;
+  /* Font size */
   -webkit-transition: color 0.3s ease, border-bottom-color 0.3s ease;
-  transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
-  border-bottom: 2px solid transparent; /* Transparent underline */
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  /* Smooth transition */
+  border-bottom: 2px solid transparent;
+  /* Transparent underline */
 }
 
 .nav__list-item a {
-  text-decoration: none; /* Remove default underline */
-  color: #333; /* Link color */
-  font-weight: 400; /* Font weight */
-  font-size: 1rem; /* Font size */
+  text-decoration: none;
+  /* Remove default underline */
+  color: #333;
+  /* Link color */
+  font-weight: 400;
+  /* Font weight */
+  font-size: 1rem;
+  /* Font size */
   -webkit-transition: color 0.3s ease, border-bottom-color 0.3s ease;
-  transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
-  border-bottom: 2px solid transparent; /* Transparent underline */
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  /* Smooth transition */
+  border-bottom: 2px solid transparent;
+  /* Transparent underline */
 }
 
 .index-text .nav__list-item a.border-bottom {
-  border-bottom: 2px solid #fff; /* Persistent underline */
+  border-bottom: 2px solid #fff;
+  /* Persistent underline */
 }
 
 .nav__list-item a.border-bottom {
-  border-bottom: 2px solid #333; /* Persistent underline */
+  border-bottom: 2px solid #333;
+  /* Persistent underline */
 }
 
 .index-text .nav__list-item a:hover {
-  border-bottom-color: #fff; /* Underline color on hover */
+  border-bottom-color: #fff;
+  /* Underline color on hover */
   -webkit-transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__list-item a:hover {
-  border-bottom-color: #333; /* Underline color on hover */
+  border-bottom-color: #333;
+  /* Underline color on hover */
   -webkit-transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Tablet styles */
 @media (min-width: 768px) {
   .index {
-    position: absolute; /* Поверх hero */
+    position: absolute;
+    /* Поверх hero */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10; /* Выше остальных слоев */
+    z-index: 10;
+    /* Выше остальных слоев */
     padding: 20px 0;
     background-color: rgba(0, 0, 0, 0);
   }
+
   .header {
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; /* Ensure spacing between logo and nav */
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    /* Ensure spacing between logo and nav */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   .nav__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; /* Horizontal layout for tablet */
+    -ms-flex-direction: row;
+    flex-direction: row;
+    /* Horizontal layout for tablet */
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; /* Center align items */
+    -ms-flex-align: center;
+    align-items: center;
+    /* Center align items */
   }
+
   .nav__list-item {
-    display: inline-block; /* Inline-block for horizontal layout */
-    margin-left: 1rem; /* Add margin between list items */
-    margin-bottom: 0; /* Remove bottom margin */
+    display: inline-block;
+    /* Inline-block for horizontal layout */
+    margin-left: 1rem;
+    /* Add margin between list items */
+    margin-bottom: 0;
+    /* Remove bottom margin */
   }
+
   .nav__list-item a {
-    font-size: 1.1rem; /* Adjust font size */
+    font-size: 1.1rem;
+    /* Adjust font size */
   }
 }
+
 /* Desktop styles */
 @media (min-width: 1024px) {
   .nav__list-item a {
-    font-size: 1.2rem; /* Adjust font size */
+    font-size: 1.2rem;
+    /* Adjust font size */
   }
+
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
+
 /* Large desktop styles */
 @media (min-width: 1200px) {
   .header {
-    max-width: 1200px; /* Max-width for header */
-    margin: 0 auto; /* Center header */
+    max-width: 1200px;
+    /* Max-width for header */
+    margin: 0 auto;
+    /* Center header */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
+
 .about__text,
 .about__img,
 .about__skills,
@@ -734,7 +828,8 @@ nav a {
   -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
   transition: opacity 1s ease, -webkit-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease; /* Add transform transition */
+  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease;
+  /* Add transform transition */
   opacity: 0;
 }
 
@@ -745,7 +840,8 @@ nav a {
   max-width: 400px;
   margin: 0 auto;
   -webkit-transform: translateX(5%);
-          transform: translateX(5%); /* Initial transform state */
+  transform: translateX(5%);
+  /* Initial transform state */
 }
 
 .about__buttons-item {
@@ -763,7 +859,7 @@ nav a {
 .about__img._active,
 .about__div-buttons._active {
   -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
   opacity: 1;
 }
 
@@ -773,7 +869,8 @@ nav a {
   -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
   transition: opacity 1s ease, -webkit-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease; /* Add transform transition */
+  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease;
+  /* Add transform transition */
 }
 
 .about__div {
@@ -782,11 +879,11 @@ nav a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -796,12 +893,12 @@ nav a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .about__div-buttons {
@@ -813,7 +910,8 @@ nav a {
   -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
   transition: opacity 1s ease, -webkit-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease; /* Add transform transition */
+  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease;
+  /* Add transform transition */
 }
 
 .about__button {
@@ -839,13 +937,14 @@ nav a {
   .about__div {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     text-align: left;
   }
+
   .about__text {
     font-size: 15px;
     font-weight: 300;
@@ -853,38 +952,45 @@ nav a {
     max-width: 400px;
     margin: 0 auto;
     -webkit-transform: translateX(0%);
-            transform: translateX(0%); /* Initial transform state */
+    transform: translateX(0%);
+    /* Initial transform state */
   }
+
   .about__img,
   .about__divtext {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
+
   .about__img {
     max-width: 450px;
   }
+
   .about__buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 5px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+
   .about__button {
     margin: 10px;
   }
 }
+
 @media (min-width: 1200px) {
   .about__text {
     font-size: 1.2rem;
     text-align: center;
   }
+
   .about__text {
     font-size: 20px;
     font-weight: 300;
@@ -892,12 +998,15 @@ nav a {
     max-width: 500px;
     margin: 0 auto;
     -webkit-transform: translateX(0%);
-            transform: translateX(0%); /* Initial transform state */
+    transform: translateX(0%);
+    /* Initial transform state */
   }
+
   .about__skills {
     font-size: 2rem;
   }
 }
+
 .image-slider__image {
   text-align: center;
 }
@@ -925,21 +1034,22 @@ nav a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   opacity: 0;
   -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
   transition: opacity 1s ease, -webkit-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease; /* Add transform transition */
+  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease;
+  /* Add transform transition */
   -webkit-transform: translate(0px, 20%);
-          transform: translate(0px, 20%);
+  transform: translate(0px, 20%);
 }
 
 .photo__list._active {
   -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
   opacity: 1;
 }
 
@@ -950,20 +1060,24 @@ nav a {
 @media (min-width: 768px) {
   .photo__list .horizontal {
     -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%;
   }
+
   .photo__list .vertical {
     -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
+    -ms-flex: 30%;
+    flex: 30%;
   }
 }
+
 /* Общие стили для изображений с оверлеем */
 /* Общие стили для изображений с оверлеем */
 .swiper-wrapper {
-  position: relative; /* Необходимо для правильного позиционирования оверлея */
-  overflow: hidden; /* Скрывает элементы, выходящие за пределы контейнера */
+  position: relative;
+  /* Необходимо для правильного позиционирования оверлея */
+  overflow: hidden;
+  /* Скрывает элементы, выходящие за пределы контейнера */
 }
 
 /* Оверлей с плавным появлением */
@@ -973,37 +1087,51 @@ nav a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Темный полупрозрачный фон */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Темный полупрозрачный фон */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; /* Центрируем текст по горизонтали */
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* Центрируем текст по горизонтали */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; /* Центрируем текст по вертикали */
-  opacity: 0; /* Скрыть оверлей по умолчанию */
+  -ms-flex-align: center;
+  align-items: center;
+  /* Центрируем текст по вертикали */
+  opacity: 0;
+  /* Скрыть оверлей по умолчанию */
   -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease; /* Плавное изменение прозрачности */
+  transition: opacity 0.5s ease;
+  /* Плавное изменение прозрачности */
 }
 
 .swiper-wrapper:hover .overlay-photo {
-  opacity: 1; /* Показываем оверлей при наведении */
+  opacity: 1;
+  /* Показываем оверлей при наведении */
 }
 
 /* Всплывающий текст */
 .overlay-text-photo {
-  color: #ffa500; /* Оранжевый цвет текста */
-  font-size: 18px; /* Размер текста */
+  color: #ffa500;
+  /* Оранжевый цвет текста */
+  font-size: 18px;
+  /* Размер текста */
   /* Жирный шрифт */
-  text-align: center; /* Выравнивание текста по центру */
-  text-transform: uppercase; /* Заглавные буквы */
-  padding: 10px; /* Отступы вокруг текста */
-  letter-spacing: 2px; /* Межбуквенный интервал */
-  opacity: 0; /* Скрыть текст по умолчанию */
+  text-align: center;
+  /* Выравнивание текста по центру */
+  text-transform: uppercase;
+  /* Заглавные буквы */
+  padding: 10px;
+  /* Отступы вокруг текста */
+  letter-spacing: 2px;
+  /* Межбуквенный интервал */
+  opacity: 0;
+  /* Скрыть текст по умолчанию */
   -webkit-animation: fadeIn 1.5s infinite;
-          animation: fadeIn 1.5s infinite; /* Анимация появления */
+  animation: fadeIn 1.5s infinite;
+  /* Анимация появления */
   display: block;
 }
 
@@ -1013,41 +1141,50 @@ nav a {
     /* Начинаем с нижней позиции */
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
+
   50% {
     opacity: 1;
     -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0); /* Двигаем текст в его обычное положение */
+    transform: translateY(0);
+    /* Двигаем текст в его обычное положение */
   }
 }
+
 @keyframes fadeIn {
   0% {
     /* Начинаем с нижней позиции */
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
+
   50% {
     opacity: 1;
     -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0); /* Двигаем текст в его обычное положение */
+    transform: translateY(0);
+    /* Двигаем текст в его обычное положение */
   }
 }
+
 /* При наведении на изображение начинаем анимацию */
 .swiper-wrapper:hover .overlay-text-photo {
   -webkit-animation: fadeIn 1s forwards;
-          animation: fadeIn 1s forwards; /* Включаем анимацию при наведении */
+  animation: fadeIn 1s forwards;
+  /* Включаем анимацию при наведении */
 }
 
 /* Для улучшения читаемости можно добавить немного теней к тексту */
@@ -1057,17 +1194,20 @@ nav a {
 
 .footer {
   padding: 20px 0px;
-  text-align: center; /* Center the content of the footer */
+  text-align: center;
+  /* Center the content of the footer */
 }
 
 .footer__list {
-  list-style: none; /* Remove default list styling */
+  list-style: none;
+  /* Remove default list styling */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; /* Center the list items */
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* Center the list items */
 }
 
 .footer__item {
@@ -1075,8 +1215,10 @@ nav a {
 }
 
 .footer__link {
-  display: inline-block; /* Ensure link can be centered */
-  text-align: center; /* Center text within the link */
+  display: inline-block;
+  /* Ensure link can be centered */
+  text-align: center;
+  /* Center text within the link */
   color: #333;
   font-weight: 500;
 }
