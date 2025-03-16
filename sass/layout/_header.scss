@@ -5,14 +5,15 @@
 	justify-content: space-between; /* Ensure spacing between logo and nav */
 	// max-width: 1600px;
 	margin: 0 auto;
-	padding: 5px;
+	padding: 10px;
 	text-align: center;
 }
 
 .nav {
 	margin-left: auto;
 	opacity: 0;
-	transition: opacity 1.4s ease, transform 1s ease; /* Add transform transition */
+	margin-top: 10px;
+	transition: all 0.4 ease-in; /* Add transform transition */
 	transform: translate(20%, 0px);
 }
 
@@ -42,15 +43,15 @@
 .index-text .nav__list-item a {
 	text-decoration: none; /* Remove default underline */
 	color: #fff; /* Link color */
-	font-weight: 400; /* Font weight */
-	font-size: 1rem; /* Font size */
+	font-weight: bold; /* Font weight */
+	font-size: 1.5rem; /* Font size */
 	transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
 	border-bottom: 2px solid transparent; /* Transparent underline */
 }
 
 .nav__list-item a {
 	text-decoration: none; /* Remove default underline */
-	color: #333; /* Link color */
+	color: #fff; /* Link color */
 	font-weight: 400; /* Font weight */
 	font-size: 1rem; /* Font size */
 	transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
@@ -58,19 +59,19 @@
 }
 
 .index-text .nav__list-item a.border-bottom {
-	border-bottom: 2px solid #fff; /* Persistent underline */
+	border-bottom: 2px solid var(--main-color); /* Persistent underline */
 }
 .nav__list-item a.border-bottom {
-	border-bottom: 2px solid #333; /* Persistent underline */
+	border-bottom: 2px solid #fff; /* Persistent underline */
 }
 
 .index-text .nav__list-item a:hover {
-	border-bottom-color: #fff; /* Underline color on hover */
+	border-bottom-color: var(--main-color); /* Underline color on hover */
 	transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__list-item a:hover {
-	border-bottom-color: #333; /* Underline color on hover */
+	border-bottom-color: var(--main-color); /* Underline color on hover */
 	transition-timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

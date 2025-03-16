@@ -1,4 +1,9 @@
 /* reset.scss */
+:root {
+	--main-color: #ffa500;
+	--bg-color: #ffffff;
+	--text-color: #1b1b1b;
+}
 
 /* Reset styles */
 html,
@@ -25,7 +30,7 @@ li {
 a {
 	text-decoration: none; /* Убираем стандартное подчеркивание */
 	color: #ffa500; /* Золотой цвет текста */
-	font-weight: normal; /* Делаем текст жирным для солидности */
+	font-weight: bold; /* Делаем текст жирным для солидности */
 
 	transition: all 0.3s ease-in-out; /* Плавный переход при наведении */
 	border-bottom: 2px solid transparent; /* Линия снизу, но невидимая */
@@ -34,7 +39,8 @@ a {
 a:hover {
 	color: #ffa500; /* Немного светлее при наведении */
 	// border-bottom: 2px solid #ffd700; /* Подчеркивание золотым */
-	text-shadow: 0px 0px 1px rgba(255, 215, 0, 0.3); /* Свечение */
+	text-shadow: 0 0 1px var(--main-color), 0 0 1px var(--main-color),
+		0 0 10px var(--main-color), 0 0 5px var(--main-color); /* Свечение */
 }
 
 @font-face {
@@ -46,33 +52,28 @@ a:hover {
 		url('FuturaPT-DemiObl.woff') format('woff'),
 		url('FuturaPT-DemiObl.ttf') format('truetype');
 	font-weight: 600;
-	font-style: italic;
+	font-weight: bold;
 }
 /* Basic styling */
 body {
 	font-family: 'Raleway', sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 300;
+	font-weight: bold;
 	font-style: normal;
-	background-color: #f0f0f0;
+	background-color: var(--text-color);
 	color: #ffa500; /* Цвет текста по умолчанию */
-}
-
-.index-text .header__logo {
-	font-size: 2rem;
-	font-weight: 500;
-	color: #fff;
-	opacity: 0;
-	transition: opacity 1.4s ease, transform 1s ease; /* Add transform transition */
-	transform: translate(-120%, 0px);
 }
 
 .header__logo {
 	font-size: 2rem;
-	font-weight: 500;
-	color: #000000;
+	font-weight: bold;
+	color: #fff;
 	opacity: 0;
-	transition: opacity 1.4s ease, transform 1s ease; /* Add transform transition */
+	text-shadow: 0 0 1px var(--main-color), 0 0 1px var(--main-color),
+		0 0 10px var(--main-color), 0 0 5px var(--main-color);
+	cursor: pointer;
+
+	transition: all 0.4 ease-in; /* Add transform transition */
 	transform: translate(-120%, 0px);
 }
 
@@ -87,7 +88,7 @@ ul {
 }
 
 header {
-	background-color: #ffffff;
+	background-color: var(--text-color);
 	color: #020202;
 	padding: 30px 0;
 }
