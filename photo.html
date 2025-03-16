@@ -42,8 +42,39 @@
 		</header>
 
 		<main class="main">
+			<div class="banner">
+				<div class="slider" style="--quantity: 4">
+					<div class="item" style="--position: 1" onclick="openSwiper(1)">
+						<img
+							src="./img/photo/basketball/Horizontal/BasketballH1.jpg"
+							alt="YouTube Video Thumbnail"
+						/>
+					</div>
+					<div class="item" style="--position: 2" onclick="openSwiper(2)">
+						<img
+							src="./img/photo/creative/Horizontal/BasketballH1.jpg"
+							alt="YouTube Video Thumbnail"
+						/>
+					</div>
+					<div class="item" style="--position: 3" onclick="openSwiper(3)">
+						<img
+							src="./img/photo/Event/Horizontal/EventH1.jpg"
+							alt="YouTube Video Thumbnail"
+						/>
+					</div>
+					<div class="item" style="--position: 4" onclick="openSwiper(4)">
+						<img
+							src="./img/photo/Object/Horizontal/ObjectH1.jpg"
+							alt="YouTube Video Thumbnail"
+						/>
+					</div>
+				</div>
+				<div class="content">
+					<div class="model"></div>
+				</div>
+			</div>
 			<ul class="photo__list _anim-items">
-				<li class="wrapper horizontal">
+				<li class="wrapper horizontal" id="swiper1" style="display: none">
 					<div class="image-slider swiper horizontal-gallery">
 						<div class="swiper-wrapper">
 							<div class="image-slider__slide swiper-slide">
@@ -128,7 +159,7 @@
 						<div class="swiper-button-next swiper__button-next"></div>
 					</div>
 				</li>
-				<li class="wrapper horizontal">
+				<li class="wrapper horizontal" id="swiper2" style="display: none">
 					<div class="image-slider swiper horizontal-gallery">
 						<div class="swiper-wrapper">
 							<div class="image-slider__slide swiper-slide">
@@ -249,9 +280,7 @@
 					</div>
 				</li>
 
-				<!-- Add more images as needed -->
-
-				<li class="wrapper horizontal">
+				<li class="wrapper horizontal" id="swiper1" style="display: none">
 					<div class="image-slider swiper vertical-gallery">
 						<div class="swiper-wrapper">
 							<div class="image-slider__slide swiper-slide">
@@ -361,7 +390,7 @@
 						<div class="swiper-button-next swiper__button-next"></div>
 					</div>
 				</li>
-				<li class="wrapper horizontal">
+				<li class="wrapper horizontal" id="swiper2" style="display: none">
 					<div class="image-slider swiper vertical-gallery">
 						<div class="swiper-wrapper">
 							<div class="image-slider__slide swiper-slide">
@@ -491,7 +520,7 @@
 					</div>
 				</li>
 
-				<li class="wrapper horizontal">
+				<li class="wrapper horizontal" id="swiper3" style="display: none">
 					<div class="image-slider swiper horizontal-gallery">
 						<div class="swiper-wrapper">
 							<div class="image-slider__slide swiper-slide">
@@ -566,7 +595,7 @@
 						<div class="swiper-button-next swiper__button-next"></div>
 					</div>
 				</li>
-				<li class="wrapper horizontal">
+				<li class="wrapper horizontal" id="swiper4" style="display: none">
 					<div class="image-slider swiper horizontal-gallery">
 						<div class="swiper-wrapper">
 							<div class="image-slider__slide swiper-slide">
@@ -690,7 +719,7 @@
 						<div class="swiper-button-next swiper__button-next"></div>
 					</div>
 				</li>
-				<li class="wrapper horizontal">
+				<li class="wrapper horizontal" id="swiper3" style="display: none">
 					<div class="image-slider swiper horizontal-gallery">
 						<div class="swiper-wrapper">
 							<div class="image-slider__slide swiper-slide">
@@ -794,7 +823,7 @@
 						<div class="swiper-button-next swiper__button-next"></div>
 					</div>
 				</li>
-				<li class="wrapper horizontal">
+				<li class="wrapper horizontal" id="swiper4" style="display: none">
 					<div class="image-slider swiper horizontal-gallery">
 						<div class="swiper-wrapper">
 							<div class="image-slider__slide swiper-slide">

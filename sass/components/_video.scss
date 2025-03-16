@@ -205,10 +205,10 @@
 	transform: rotateY(
 			calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
 		)
-		translateZ(550px);
+		translateZ(350px);
 }
 
-.banner .slider .item a img {
+.banner .slider .item img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
