@@ -4,13 +4,12 @@
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	// background-position: top center;
-	// background-attachment: fixed;
-	// margin: 0 auto;
+	
 }
 
 .section {
-	min-height: 100vh;
+	padding-top: 80px;
+min-height: 70vh;
 
 	justify-content: center;
 	align-items: center;
@@ -19,9 +18,11 @@
 .home {
 	display: flex;
 
+
+padding-bottom: 120px;
 	justify-content: center;
 	align-items: center;
-	gap: 4rem;
+gap: 4rem;
 	// background: var(--bg-color);
 }
 
@@ -292,7 +293,7 @@
 }
 @media (max-width: 991px) {
 	.section {
-		padding: 10rem 3% 2rem;
+		padding: 2rem 3% 2rem;
 	}
 
 	.services {
