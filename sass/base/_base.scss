@@ -30,18 +30,17 @@ li {
 a {
 	text-decoration: none; /* Убираем стандартное подчеркивание */
 	color: #ffa500; /* Золотой цвет текста */
-	font-weight: bold; /* Делаем текст жирным для солидности */
+	font-weight: 300; /* Делаем текст жирным для солидности */
 
 	transition: all 0.3s ease-in-out; /* Плавный переход при наведении */
 	border-bottom: 2px solid transparent; /* Линия снизу, но невидимая */
 }
 
-a:hover {
-	color: #ffa500; /* Немного светлее при наведении */
-	// border-bottom: 2px solid #ffd700; /* Подчеркивание золотым */
-	text-shadow: 0 0 1px var(--main-color), 0 0 1px var(--main-color),
-		0 0 10px var(--main-color), 0 0 5px var(--main-color); /* Свечение */
-}
+// a:hover {
+// 	color: #ffa500; /* Немного светлее при наведении */
+// 	// border-bottom: 2px solid #ffd700; /* Подчеркивание золотым */
+
+// }
 
 @font-face {
 	font-family: 'Futura PT Demi';
@@ -69,8 +68,7 @@ body {
 	font-weight: bold;
 	color: #fff;
 	opacity: 0;
-	text-shadow: 0 0 1px var(--main-color), 0 0 1px var(--main-color),
-		0 0 10px var(--main-color), 0 0 5px var(--main-color);
+
 	cursor: pointer;
 
 	transition: all 0.4 ease-in; /* Add transform transition */
