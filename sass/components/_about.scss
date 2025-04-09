@@ -27,7 +27,7 @@ gap: 4rem;
 }
 
 .home .home-content h1 {
-	font-size: 64px;
+	font-size: 60px;
 	margin-top: 100px;
 	font-weight: 700;
 	
@@ -38,6 +38,7 @@ gap: 4rem;
 .home-content_span{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .span {
@@ -45,6 +46,12 @@ gap: 4rem;
 	// box-shadow: 0 0 25px #fff;
 	// text-shadow: 0 0 1px var(--main-color), 0 0 1px var(--main-color),
 	// 	0 0 10px var(--main-color), 0 0 5px var(--main-color);
+	margin-bottom: 10px;
+	
+}
+
+.home-content_text2{
+	
 }
 
 .home-content h3 {
@@ -55,24 +62,27 @@ gap: 4rem;
 }
 
 .home-img {
-	border-radius: 50%;
-margin: 0 auto;
-	// align-items: center;
+
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
 }
 
 .home-img img {
-	width: 390px;
-	height: 500px;
+	width: 100%;
+	max-width: 370px;
+	height: auto;
 
-	// border-radius: 50%;
-	
-	cursor: pointer;
+	margin: 0 20px;
+
 	transition: transform 0.3s, filter 0.3s;
 }
-
 .home-content_text2{
 	display: none;
 }
+/* Адаптивность под мобильные устройства */
 
 @media (max-width: 1200px) {
 	.home-content_text1 {
@@ -81,9 +91,35 @@ margin: 0 auto;
   
 	.home-content_text2 {
 	  display: block;
-	margin: 0 auto;
+	margin: 0 15px auto auto;
+
 	}
+
+
   }
+
+@media (max-width: 768px) {
+	.home-img img {
+		max-width: 280px;
+	}
+
+	.home-content_text2{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 480px) {
+	.home-img img {
+		max-width: 200px;
+	}
+	.home-content_text2{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
 .home-content_span-img{
 	display: flex;
 	margin-top: 20px;
@@ -106,7 +142,7 @@ margin: 0 auto;
 	width: 256px;
 	margin-left: 10px;
 	max-width: 600px;
-	text-align: justify;
+	margin-bottom: 10px;
 	color: #FFFFFF;
 }
 
@@ -186,11 +222,19 @@ margin-left: 10px;
 
 	.home .home-content h3 {
 		font-size: 2rem;
+		margin-top: 30px;
+		margin-bottom: 10px;
 		text-align: center;
 	}
+
+.home .home-content p{
+	text-align: center;
+}
+
 	.home .home-content h1 {
 		font-size: 3rem;
 		text-align: center;
+		margin-top: 10px;
 	}
 
 	.home-img img {
